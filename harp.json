@@ -1,0 +1,21 @@
+{
+  "globals": {
+    "lang": "en",
+    "url": "",
+    "site": "HarpStart",
+    "title": "",
+    "author": "",
+    "description": "",
+    "twitter": "",
+    "opengraph": "assets/images/og.jpg",
+    "favicon": "assets/images/favicon.ico",
+    "styles": [
+      "assets/bower/normalize-css/normalize.css",
+      "assets/bower/basicGrid/dist/basicGrid.min.css",
+      "assets/styles/main.css"
+    ],
+    "scripts": [
+      "assets/scripts/dist/main.js"
+    ]
+  }
+}

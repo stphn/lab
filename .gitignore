@@ -1,0 +1,15 @@
+# Package Managers
+npm-debug.log
+node_modules
+public/assets/bower
+
+# IDE
+.idea/
+
+# Source folder
+public/assets/scripts/dist
+
+# Dist folder
+dist
+dist/assets/partials
+dist/assets/scripts/src

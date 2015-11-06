@@ -1,0 +1,15 @@
+{
+  "harp": "harp.json",
+  "dist": "dist/",
+  "data": "public/**/*.json",
+  "templates": "public/**/*.ejs",
+  "images": "public/assets/images/**",
+  "scripts": {
+    "src": "public/assets/scripts/src/**/*[.js, .jsx]",
+    "dist": "public/assets/scripts/dist"
+  },
+  "styles": {
+    "src": "public/assets/styles/**/*[.css, .scss, .sass]",
+    "dist": "public/assets/styles/main.css"
+  }
+}

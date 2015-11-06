@@ -1,0 +1,11 @@
+.wrap {
+
+	position: relative;
+	margin: 0 auto;
+	max-width: $maxWidth;
+
+	@include breakpoint($maxWidth) {
+		padding: 0 4%;
+	}
+
+}

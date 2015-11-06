@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head lang="<%= lang %>">
+
+		<title><%= site %> - <%= title %></title>
+
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta charset="utf-8">
+
+		<meta name="author" content="<%= author %>">
+		<meta name="description" content="<%= description %>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Open Graph protocol
+		<meta property="og:title" content="<%= site %> - <%= title %>">
+		<meta property="og:description" content="<%= description %>">
+		<meta property="og:image" content="<%= url %>/assets/images/og.jpg">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="<%= url %>"> -->
+
+		<!-- Twitter Cards
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@<%= twitter %>">
+		<meta name="twitter:title" content="<%= site %> - <%= title %>">
+		<meta name="twitter:description" content="<%= description %>">
+		<meta name="twitter:image:src" content="<%= url %>/assets/images/og.jpg"> -->
+
+		<link rel="shortcut icon" href="<%= favicon %>" type="image/x-icon">
+
+		<!-- CSS -->
+		<% for(var i=0; i<styles.length; i++) {%>
+			<link rel="stylesheet" href="<%= styles[i] %>">
+		<% } %>
+
+	</head>
+	<body>

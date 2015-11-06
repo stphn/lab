@@ -1,0 +1,28 @@
+@function black($opacity) {
+
+	@return rgba(0, 0, 0, $opacity);
+
+}
+
+@function white($opacity) {
+
+	@return rgba(255, 255, 255, $opacity);
+
+}
+
+@function color($key) {
+
+	// Currently not working in libsass <= 3.2.5
+	// Fixed in libsass > 3.3.0
+	// @if type-of($key)=='color' {
+	// 	@error 'Never user colors like `#{ $key }` as map keys'
+	// }
+
+	@if map-has-key($colors, $key) {
+		@return map-get($colors, $key);
+	}
+
+	@error 'Unknown `#{$key}` in $colors.';
+	@return null;
+
+}

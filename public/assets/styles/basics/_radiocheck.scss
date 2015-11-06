@@ -1,0 +1,89 @@
+/* VERY BASICS ------------------------------------------------------------------------------------------- */
+
+input[type=radio] ,
+input[type=checkbox] { display:none; } // hides the inputs
+
+input[type=radio]    + label:before ,
+input[type=checkbox] + label:before {
+	font-family: $radiocheck; // font icon
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:10px;
+
+}
+input[type=radio]    + label ,
+input[type=checkbox] + label {
+	cursor: pointer;
+
+}
+
+/* radio icons    */
+input.radio-v01[type=radio]              + label:before { content: $rd_v01--default; } // unchecked icon
+input.radio-v01[type=radio]:checked      + label:before { content: $rd_v01--checked; } // checked icon
+
+/* checkbox icons */
+input.checkbox-v01[type=checkbox]           + label:before { content: $cb_v01--default; } // unchecked icon
+input.checkbox-v01[type=checkbox]:checked   + label:before { content: $cb_v01--checked; } // checked icon
+
+/* toggle icons */
+input.toggle-v01[type=checkbox]           + label:before { content: $tg_v01--default; } // unchecked icon
+input.toggle-v01[type=checkbox]:checked   + label:before { content: $tg_v01--checked; } // checked icon
+
+
+
+// /* OPTIONS ------------------------------------------------------------------------------------------- */
+
+// /* animation */
+
+@keyframes bounce {
+
+	0%   { tranform:  scale(1);    }
+	50%  { transform: scale(1.05); }
+	100% { transform: scale(1);    }
+}
+
+input[type="radio"]:checked    + label,
+input[type="checkbox"]:checked + label {
+	animation: bounce 200ms ease; // animation on "checked"
+}
+
+// /* icon background color */
+
+// input[type=checkbox] + label:before ,
+// input[type=radio]    + label:before {
+// 	$iconSize: 18px; // changes proportionaly the size;
+// 	font-size: $iconSize;
+// 	line-height: $iconSize;
+// }
+
+// input[type=radio]    + label:before {
+// 	border-radius: 100%; // circle background for radio
+// }
+
+// input[type="radio"]:checked    + label:before ,
+// input[type="checkbox"]:checked + label:before , {
+// 	background-color: red;
+// }
+
+/* default icon color */
+input[type=radio]    + label ,
+input[type=checkbox] + label {
+	color: black(0.45);
+	transition: color .2s $timing;
+}
+
+// /* checked icon color */
+
+
+input[type="radio"]:checked    + label:before ,
+input[type="checkbox"]:checked + label:before , {
+	color: green;
+}
+
+// /* checked label color */
+
+input[type="radio"]:checked    + label ,
+input[type="checkbox"]:checked + label {
+	color: green;
+}
+
