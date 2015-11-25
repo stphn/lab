@@ -6,14 +6,17 @@ input[type=checkbox] { display:none; } // hides the inputs
 input[type=radio]    + label:before ,
 input[type=checkbox] + label:before {
 	font-family: $radiocheck; // font icon
-	display: inline-block;
-	vertical-align: middle;
 	margin-right:10px;
 
 }
+
 input[type=radio]    + label ,
 input[type=checkbox] + label {
-	cursor: pointer;
+	appearance: none;
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   vertical-align: middle;
 
 }
 
@@ -44,6 +47,8 @@ input.toggle-v01[type=checkbox]:checked   + label:before { content: $tg_v01--che
 
 input[type="radio"]:checked    + label,
 input[type="checkbox"]:checked + label {
+
+
 	animation: bounce 200ms ease; // animation on "checked"
 }
 
