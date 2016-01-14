@@ -1,5 +1,30 @@
 {
   "index": {
-    "title": "Home"
+    "title": "Home",
+    "bodyclass": ""
+  },
+  "radiocheck": {
+    "title": "radiocheck",
+    "bodyclass": ""
+  },
+  "swipe": {
+    "title": "swipe",
+    "bodyclass": ""
+  },
+  "border": {
+    "title": "border",
+    "bodyclass": "borders"
+  },
+  "tilted-slideshow": {
+    "title": "tilted-slideshow",
+    "bodyclass": "tilted-slideshow"
+  },
+  "box-shadow": {
+    "title": "box-shadow",
+    "bodyclass": "box-shadow"
+  },
+  "diagram": {
+    "title": "diagram",
+    "bodyclass": "diagram"
   }
 }

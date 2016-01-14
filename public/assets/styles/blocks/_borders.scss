@@ -1,0 +1,51 @@
+@keyframes switch {
+    from {
+    	width: calc(100% - 30px);
+		height: calc(100% - 30px);
+    }
+    to {
+    	width: calc(100% + 30px);
+		height: calc(100% + 30px);
+    }
+}
+
+body.borders {
+
+	position: relative;
+	background: url('../images/borders/black_paper.png');
+
+	&:before {
+		content:"";
+		border: 6px solid color('gold');
+		box-shadow: inset 0 0 0px 144px rgba(99, 99, 99, 0.13);
+		width: calc(100% - 30px);
+		height: calc(100% - 30px);
+		transition: width .8s $timing, height .8s $timing,box-shadow .4s $timing;
+		@include centerer;
+	}
+
+	&.borders--active {
+
+		&:before {
+			width: calc(100% + 30px);
+			height: calc(100% + 30px);
+			box-shadow: inset 0 0 0px 5px rgba(99, 99, 99, 0.13);
+
+		}
+
+	}
+	a {
+		@include centerer;
+		font-size: 3em;
+		text-decoration: none;
+		padding: .52em 1em;
+		color: color('gold');
+		border: 2px solid color('gold');
+		box-shadow:  0 0 0px 0px rgba(99, 99, 99, 0.13);
+		transition: box-shadow .8s $timing;
+		&.borders--active {
+			box-shadow:  0 0 0px 8px rgba(99, 99, 99, 0.13),inset 0 0 0px 8px rgba(99, 99, 99, 0.13);
+		}
+	}
+
+}

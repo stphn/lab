@@ -1,0 +1,72 @@
+$cyan : #00AACC;
+$magenta : #FF0099;
+$yellow : #FFCC00;
+body {
+	background: #fff;
+}
+svg {
+	@include centerer
+}
+
+
+.diagram {
+	cursor: pointer;
+
+
+	circle{
+
+	}
+
+	&__circle {
+
+
+		mix-blend-mode: multiply;
+		stroke: #000;
+		stroke-dasharray: 4000 4000;
+		stroke-dashoffset: 4000;
+		stroke-width: 4;
+		transition: stroke-dashoffset 1s $timing,fill .5s $timing;
+
+
+		&--active {
+			//filter: url(#AI_Shadow_1);
+			stroke: #000;
+			stroke-width: 4px;
+			stroke-dashoffset: 0;
+			// mix-blend-mode: multiply;
+
+
+
+		}
+
+
+		&--cheap { fill: $cyan }
+		&--cheap.diagram__circle--active { fill: darken($cyan,2%);}
+		&--fast  { fill: $magenta;}
+		&--fast.diagram__circle--active   { fill: darken($magenta,2%);}
+		&--good  { fill: $yellow;}
+		&--good.diagram__circle--active   { fill: darken($yellow,2%);}
+	}
+	&__text {
+		font-size: 75px;
+
+		&--between {
+			font-size: 32px;
+			opacity: 0;
+			transition: opacity .4s $timing;
+			fill:white;
+
+			&:last-child {
+				fill:white;
+				font-size: 26px;
+
+			}
+			&--active {
+
+				opacity: 1;
+				transform: scale(2)
+
+			}
+		}
+	}
+}

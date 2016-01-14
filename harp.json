@@ -15,6 +15,8 @@
       "assets/styles/main.css"
     ],
     "scripts": [
+      "assets/scripts/src/classie.js",
+      "assets/scripts/src/tiltSlider.js",
       "assets/scripts/dist/main.js"
     ]
   }
