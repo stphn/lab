@@ -27,4 +27,17 @@
     "title": "diagram",
     "bodyclass": "diagram"
   }
+  ,
+  "amcharts": {
+    "title": "amcharts",
+    "bodyclass": "amcharts"
+  },
+  "skrollr": {
+    "title": "skrollr",
+    "bodyclass": "skrollr"
+  },
+  "video": {
+    "title": "video",
+    "bodyclass": "video-loaded"
+  }
 }

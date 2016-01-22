@@ -12,11 +12,24 @@
     "styles": [
       "assets/bower/normalize-css/normalize.css",
       "assets/bower/basicGrid/dist/basicGrid.min.css",
+      "assets/bower/ammap3/ammap/ammap.css",
+      "assets/bower/amcharts3/amcharts/plugins/export/export.css",
       "assets/styles/main.css"
     ],
     "scripts": [
       "assets/scripts/src/classie.js",
       "assets/scripts/src/tiltSlider.js",
+      "assets/bower/ammap3/ammap/ammap.js",
+      "assets/bower/ammap3/ammap/maps/js/continentsHigh.js",
+      "assets/bower/amcharts3/amcharts/amcharts.js",
+      "assets/bower/amcharts3/amcharts/pie.js",
+      "assets/bower/amcharts3/amcharts/serial.js",
+      "assets/bower/amcharts3/amcharts/plugins/dataloader/dataloader.js",
+      "assets/bower/amcharts3/amcharts/plugins/export/export.min.js",
+      "assets/bower/amcharts3/amcharts/plugins/responsive/responsive.js",
+      "assets/bower/ammap3/ammap/plugins/responsive/responsive.js",
+      "assets/bower/bower-skrollr/skrollr.js",
+      "assets/scripts/dist/youtube.js",
       "assets/scripts/dist/main.js"
     ]
   }
